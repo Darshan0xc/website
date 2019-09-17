@@ -1,0 +1,17 @@
+=======
+[Note] : I'm using all stock images from shutterstock except the images used in the page 'project1.html'. Images used in 'project1.html' are from my own project.
+=======
+
+banner.png : https://www.shutterstock.com/image-vector/web-development-coding-cross-platform-website-1128653108?src=Hm1xH_P0LZFm8kiSNTEHpQ-1-73
+
+bcencode.png, bcencode2.png : My own Images.
+
+html_3.png : https://www.shutterstock.com/image-vector/word-html-concept-written-colorful-abstract-1078948187?src=mZqsqhqfS6-y7tDshPpb8w-1-35
+
+html_2.png : https://www.shutterstock.com/image-photo/html5-main-menu-code-editor-website-375299887?src=mZqsqhqfS6-y7tDshPpb8w-1-17
+
+user.png : https://www.shutterstock.com/image-photo/programmer-working-on-laptop-office-focus-395220502?src=cJbMIQWPU1XuuxqWbOJ4iA-1-21
+
+user2.png: https://stock.adobe.com/ca/images/software-developer-working/215949089?prev_url=detail
+
+webdev.png : https://www.shutterstock.com/image-vector/laptop-monitor-showing-investment-planning-page-1050943913?src=htdGMF6w4TPXXhGjMrn_zw-1-27

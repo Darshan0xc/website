@@ -1,0 +1,759 @@
+* {
+    text-decoration: none;
+}
+
+article,aside,footer,header,nav,section { 
+    display:block;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0; 
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 110px;
+    box-shadow: 1px 1px 5px #222;
+}
+
+main {
+    background-color: #fff;
+    padding-top: 110px;
+}
+
+header .logoBrand {
+    font-family: "Roboto Slab", georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 0 16px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #222;
+}
+
+.headProjects, .fillButton {
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+}
+
+.headProjects:hover, .fillButton:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+header .headProjects {
+    display: none;
+}
+
+/* Index Page.*/
+.top-banner {
+    width: 100%;
+    height: calc(100vh - 10px);
+    /*margin-top: -40px;*/
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.top-banner h1 {
+    font-family: "Roboto Slab", georgia, serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px #111;
+    
+    margin-top: 160px;
+}
+
+.showcase-links div {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.showcase-links {
+    padding-bottom: 20px;
+}
+
+.showcase-links div h3 {
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 90px;
+    padding: 5px;
+}
+
+.project-blocks {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project-blocks h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.project-blocks .project-block {
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px 10px;
+    background-color: #e3e3e3;
+    float: left;
+}
+
+.project-blocks .project-block p {
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 45%;
+    text-transform: uppercase;
+}
+
+/*Projects*/
+
+.project h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project img {
+	transition: all 5s;
+}
+
+.project img:hover {
+	position: relative;
+	top: 20px;
+	transform: scale(1.5);
+}
+
+.project article{
+    clear: both;
+    padding-top: 20px;
+}
+
+.project img {
+    width: 49%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.project article h3 {
+    font-family: "Roboto Slab", georgia, serif;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.leftimg {
+    float: left;
+}
+
+.rightimg {
+    float: right;
+}
+
+.project article div p {
+    font-family: "Open Sans", arial, sans-serif;
+    color: #222;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    column-count: 3;
+    column-gap: 30px;
+}
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #222;
+}
+
+footer ul {
+    width: fit-content;
+    padding-left: 20px;
+    float: left;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a, footer li {
+    font-family: "Roboto Slab", georgia, serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+footer a i {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+footer a i[class="fab fa-facebook"]:hover {
+    color: #3C5A99;
+}
+
+footer a i[class="fab fa-twitter"]:hover {
+    color: #38A1F3;
+}
+
+footer a i[class="fab fa-youtube"]:hover {
+    color: #FF0000
+}
+
+footer a i[class="fas fa-envelope"]:hover {
+    color: #44B39B;
+}
+
+.foot-social-media {
+    margin-top: 25px;
+    margin-right: 20px;
+    float: right;
+}
+
+.footer-projects-links {
+    display: none;
+}
+
+.valid-code-badges {
+    float: left;
+    /*width: fit-content;*/
+    margin-left: 20px;
+}
+
+/*====================*/
+/* Contact Me Page */
+/*====================*/
+.location-map {
+    width: 95.5%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #222;
+}
+
+.location-map iframe {
+    width: 100%;
+}
+
+.contact-form {
+    width: 94%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #222;
+    overflow: auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.contact-form span {
+    color: red;
+}
+
+.contact-form label, input, textarea {
+    display: block;
+}
+
+.contact-form .left-side {
+    float: none;
+    margin-right: 0;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact-form input {
+    width: 98%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-form .clearfix {
+    clear: both;
+}
+
+.contact-form textarea {
+    width: 98%;
+    height: 190px;
+}
+
+.contact-form .fillButton {
+    width: 40px;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 38px;
+    border: 1px solid #222;
+    text-decoration: none;
+    color: #222;
+    margin-top: 30px;
+    margin-right: 40px;
+    padding: 0 20px;
+}
+
+.contact-form .fillButton:hover {
+    color: #fff;
+}
+
+/*=================*/
+/*About Me Page*/
+/*=================*/
+.about-block {
+    /*margin-bottom: 20px;*/
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about-block .author-image {
+    width: 95%;
+    border: 2px solid #222;
+    margin: 0;
+    padding: 5px 5px 0px 5px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.author-intro {
+    padding: 5px;
+}
+
+/*===========*/
+/*Blog Page*/
+/*===========*/
+
+#slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    
+    20% {
+        left: 0;
+    }
+    
+    25% {
+        left: -100%;
+    }
+    
+    45% {
+        left: -100%;
+    }
+    
+    50% {
+        left: -200%;
+    }
+    
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }
+    
+    95% {
+        left: -300%;
+    }
+    
+    100% {
+        left: -400%;
+    }
+}
+
+header {
+    z-index: 10;
+}
+
+.blog-post {
+    border-bottom: 1px solid #222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.blog-post img {
+    text-align: center;
+    width: 95%;
+}
+
+.blog-post h3 {
+    margin: 5px 0 5px 0;
+    padding: 0;
+    color: #222;
+}
+
+.blog-post .author-info {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blog-post p {
+    margin: 10px 0 10px 0;
+}
+
+/* --Media Queries-- */
+/* Screen : PC and Greater. */
+@media only screen and (min-width: 1000px) {
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+    
+    .parentContainer {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    
+    header .logoBrand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #222;
+        float: left;
+    }
+    
+    nav ul {
+        /*margin: 0 auto;*/
+        margin: 20px 0 0 20px;
+        width: fit-content;
+        float: left;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    
+    nav ul li {
+        line-height: 60px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+        font-weight: normal;
+        color: #222;
+        text-transform: uppercase;
+    }
+    
+    header .headProjects {
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: #222;
+        line-height: 38px;
+        border: 1px solid #222;
+        float: right;
+        
+        margin-top: 30px;
+        margin-right: 40px;
+        padding: 0 20px;
+    }
+    
+    .top-banner {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top-banner h1 {
+        display: block;
+        width: 560px;
+    }
+    
+    .showcase-links {
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .showcase-links div {
+        margin: 10px 20px 10px 0;
+        height: 230px;
+        float: left;
+        background-color: #f2f2f2;
+    }
+    
+    .showcase-links div h3 {
+        line-height: 185px;
+    }
+    
+    .home-blocks-square {
+        width: calc(25% - 20px) !important;
+    }
+    
+    .home-blocks-rectangle {
+        width: calc(50% - 20px) !important;
+    }
+    
+    .showcase-links h3 {
+        line-height: 230px;
+    }
+    
+    .footer-projects-links {
+        display: block;
+        margin-left: 35px;
+    }
+    
+    footer {
+        width: 100%;
+    }
+    
+    footer ul li p {
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto Slab", georgia, serif;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .location-map {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #222;
+    }
+    
+    .contact-form {
+        width: calc(80% - 20px);
+    }
+    
+    .contact-form .left-side {
+        float: left;
+        margin-right: 60px;
+    }
+    
+    .contact-form input {
+        width: 300px;
+        height: 25px;
+    }
+    
+    .contact-form .clearfix {
+        clear: both;
+    }
+    
+    .contact-form textarea {
+        width: 50%;
+        height: 190px;
+    }
+    
+    .about-block {
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .about-block .author-image {
+        width: 400px;
+        float: left;
+    }
+    
+    .about-block .author-intro {
+        width: 53%;
+        float: right;
+        text-align: justify;
+    }
+    
+    .about-block .author-intro p {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    /*Blog*/
+    #slider figure img {
+        height: 600px;
+    }
+	
+	#slider .slider-info {
+		font-size: 18px;
+		display: block;
+		padding: 10px 0;
+		line-height: 2;
+	}
+    
+    .blog-post {
+        border-bottom: none;
+        padding-bottom: 20px;
+    }
+    
+    .blog-post img {
+        width: 300px;
+        height: 200px;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .blog-post h3 {
+        font-size: 22px;
+    }
+    
+    .blog-post span {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .blog-post p {
+        line-height: 1.8;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .contact-form {
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    header {
+        height: 19%;
+        padding-bottom: 10px;
+        overflow: auto;
+    }
+    
+    header .logoBrand {
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .top-banner h2 {
+        font-size: 2em;
+        padding: 10px;
+    }
+    
+    nav ul {
+        margin: 0 0 0 5%;
+    }
+    
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        padding: 5px 0;
+        transition: border-bottom 0.5s ease-in;
+    }
+    
+    nav ul li:hover {
+        border-bottom: 1px solid #222;
+    }
+}
